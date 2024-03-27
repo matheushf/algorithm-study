@@ -23,11 +23,3 @@ const phoneBook = [
 const personName = "Bob";
 const phoneNumber = searchPhoneNumber(personName, phoneBook);
 console.log(`Phone number for ${personName}: ${phoneNumber}`);
-
-
-SELECT s.SUPPLIER_NAME AS SUPPLIER, p.PRICE
-FROM SUPPLIER s
-INNER JOIN SUPPLY sp ON s.SUPPLIER_CODE = sp.SUPPLIER_CODE
-INNER JOIN PART p ON sp.PART_CODE = p.PART_CODE
-INNER JOIN CAR c ON sp.CAR_CODE = c.CAR_CODE
-WHERE s.CITY = 'VITORIA' AND p.NAME_PART = 'MOTOR' AND c.NAME_CAR = 'KOMBI';
