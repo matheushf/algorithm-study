@@ -1,8 +1,6 @@
 function isSubsequence(str1, str2) {
   let i = 0;
   let j = 0;
-  const matchs = str1;
-  const test = new Set(str1);
 
   while (i <= str1.length) {
     if (str1[i] === str2[j]) {
@@ -11,8 +9,6 @@ function isSubsequence(str1, str2) {
     } else {
       j++;
     }
-
-    console.log(i, j, str1.length);
 
     if (i >= str1.length) return true;
     if (j > str2.length) return false;
