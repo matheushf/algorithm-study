@@ -8,15 +8,11 @@ function maxSubarraySum(array, nElements) {
   let currentSum = 0;
 
   while (i <= array.length - nElements) {
-    console.log("antes", i, j);
     currentSum += array[j];
     j++;
     count++;
 
-    console.log("depois", currentSum, max);
-
     if (count === nElements) {
-      console.log("dentro", i, j);
       max = Math.max(max, currentSum);
       currentSum = 0;
       count = 0;
